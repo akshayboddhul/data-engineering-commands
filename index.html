@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Data Engineering Commands - Quick Reference Guide</title>
+    <meta name="description" content="A comprehensive quick reference guide for essential data engineering commands including Linux, Bash, Git, Databricks, Curl, Docker, SQL and more.">
+    <meta name="keywords" content="data engineering, commands, linux, bash, git, databricks, curl, docker, sql, quick reference">
+    <meta name="author" content="Data Engineering Quick Reference">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="hero">
+                <h1 class="hero-title">Essential Data Engineering Commands</h1>
+                <p class="hero-subtitle">A comprehensive quick reference guide for data engineers</p>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Search commands..." class="search-input" autocomplete="off">
+                        <button id="clear-search" class="clear-search" aria-label="Clear search" style="display: none;">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-items">
+                <button class="nav-item active" data-category="all">
+                    <i class="fas fa-th-list"></i>
+                    All Commands
+                </button>
+                <button class="nav-item" data-category="linux">
+                    <i class="fab fa-linux"></i>
+                    Linux
+                </button>
+                <button class="nav-item" data-category="bash">
+                    <i class="fas fa-terminal"></i>
+                    Bash
+                </button>
+                <button class="nav-item" data-category="git">
+                    <i class="fab fa-git-alt"></i>
+                    Git
+                </button>
+                <button class="nav-item" data-category="databricks">
+                    <i class="fas fa-database"></i>
+                    Databricks
+                </button>
+                <button class="nav-item" data-category="curl">
+                    <i class="fas fa-globe"></i>
+                    Curl
+                </button>
+                <button class="nav-item" data-category="docker">
+                    <i class="fab fa-docker"></i>
+                    Docker
+                </button>
+                <button class="nav-item" data-category="sql">
+                    <i class="fas fa-table"></i>
+                    SQL
+                </button>
+                <button class="nav-item" data-category="tools">
+                    <i class="fas fa-tools"></i>
+                    Additional Tools
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Command Sections -->
+            <div id="command-sections" class="sections">
+                <!-- Sections will be populated by JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>No commands found</h3>
+                <p>Try adjusting your search terms or browse categories above.</p>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div id="loading" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading commands...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Essential Data Engineering Commands. Made with ❤️ for data engineers worldwide.</p>
+                    <span class="command-count-total">142+ Commands</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
